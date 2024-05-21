@@ -1,0 +1,7 @@
+Generar numero random
+Si se apreta new game
+	Resetear todos los puntos
+	Poner el player 2 como inactivo
+
+Si se apreta roll dice
+	Si ya  
