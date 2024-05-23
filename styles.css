@@ -55,6 +55,7 @@ section {
     min-width: 28rem;
     min-height: 33rem;
     margin: 1% 5%;
+    box-shadow: 0px 0px 5px 1px #544541;
 }
 
 .section-off {
@@ -106,6 +107,10 @@ img {
     width: 14.5rem;
 }
 
+.rolling {
+    filter: drop-shadow(0px 0px 5px #544541);
+}
+
 button {
     position: relative;
     width: 100%;
@@ -124,6 +129,82 @@ button {
 }
 
 button:hover {
-    background-color: #3a060872; 
+    background-color: #3A0608;
+    color: #B0A886; 
     border-radius: 10px;
+}
+
+.modal-background {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 105, 105, 0.70); 
+}
+
+.show-modal {
+    display: block;
+}
+
+.modal-content {
+    background-color: #b0a886d3;
+    margin: 12rem auto;
+    padding: 15px;
+    width: 28rem;
+    height: 38rem;
+    border-radius: 10px;
+    border: 15px solid #544541;
+    font-size: 4rem;
+    text-align: right;
+}
+
+span {
+    cursor: pointer;
+    padding-right: 10px;
+    color: #544541;
+}
+
+#winner-box {
+    background-color: #544541;
+    position: relative;
+    margin: 2.5rem auto;
+    padding-bottom: 2rem;
+    width: 18rem;
+    height: 6rem;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px #F6F3EE;
+}
+
+#winner-text {
+    color: #F6F3EE;
+    font-family: "Italianno", cursive;
+    font-size: 6rem;
+}
+
+#player-box {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.winner-name {
+    color: #3A0608;
+    font-family: "Vollkorn", serif;
+    font-weight: 600;
+    font-size: 5rem;
+    text-shadow: 0px 0px 5px #F6F3EE;
+}
+
+#score-box {
+    background-color: #DED6A9;
+    width: 18rem;
+    text-align: center;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    box-shadow: 0px 0px 8px 3px #544541;
+}
+
+#winner-score, #final-score {
+    color: #544541;
 }

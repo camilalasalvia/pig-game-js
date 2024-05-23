@@ -11,31 +11,46 @@
     <main>
         <h1><span id="title1">PIG</span><br><span id="title2">Game</span></h1>
         <div class="sections">
-          <section>
+          <section id="player1">
             <h2>Player 1</h2>
-            <p class="score">43</p>
+            <p id="total-player1" class="score">0</p>
             <div class="current-score">
               <p>Current:</p>
-              <p>0</p>
+              <p id="current-player1">0</p>
             </div>
           </section>
           <div class="buttons-dice">
-            <img src="/dice/5.png">
-            <button>New game</button>
-            <button>Roll dice</button>
-            <button>Hold</button>
+            <img id="dice" src="/dice/1.png">
+            <button id="new-game">New game</button>
+            <button id="roll-dice">Roll dice</button>
+            <button id="hold">Hold</button>
           </div>
-          <section class="section-off">
+          <section id="player2" class="section-off">
             <h2>Player 2</h2>
-            <p class="score">24</p>
+            <p id="total-player2" class="score">0</p>
             <div class="current-score">
               <p>Current:</p>
-              <p>0</p>
+              <p id="current-player2">0</p>
             </div>
           </section>
         </div>
+        <div id="modal" class="modal-background">
+          <div id="winner-modal" class="modal-content">
+              <span id="close">&times;</span><br>
+              <div id="winner-box">
+                <p id="winner-text">Winner</p>
+              </div>
+              <div id="player-box">
+                <p class="winner-name">Player </p>
+                <p class="winner-name" id="winner-num">1</p>
+              </div>
+              <div id="score-box">
+                <p id="winner-score">Score: </p>
+                <p id="final-score">100</p>
+              </div>
+          </div>
+      </div>
     </main>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
-
