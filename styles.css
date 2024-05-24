@@ -187,6 +187,7 @@ span {
 #player-box {
     text-align: center;
     margin: 1rem auto;
+    height: 8rem;
 }
 
 .winner-name {
@@ -200,6 +201,7 @@ span {
 #score-box {
     background-color: #DED6A9;
     width: 18rem;
+    height: 5rem;
     text-align: center;
     margin: 1rem auto;
     padding-bottom: 1rem;
