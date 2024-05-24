@@ -22,7 +22,7 @@ document.querySelector('#close').addEventListener('click', function() {
 
 function newGame() {
     resetScore();
-    diceImage.setAttribute('src', '/dice/1.png');
+    diceImage.setAttribute('src', 'dice/1.png');
     if(activePlayer === 1) switchPlayer();
 }
 
@@ -85,7 +85,7 @@ function roll(callback) {
 }
 
 function diceFace(number) {
-    imageName = '/dice/' + number + '.png';
+    imageName = 'dice/' + number + '.png';
     diceImage.setAttribute('src', imageName);
 }
 
